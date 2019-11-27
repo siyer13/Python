@@ -18,11 +18,14 @@ if __name__ == '__main__':
             highest = score
         elif lowest < score < highest:
             second_lowest = score
-            students.clear()
-            students.append(name_mark_list)
         elif lowest < score:
             lowest = score
+            students.clear()
+            students.append(name_mark_list)
 
+    print(lowest)
+    print(second_lowest)
+    print(highest)
     print(students)
     stu_name = []
     for student in students:
